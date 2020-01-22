@@ -1,0 +1,9 @@
+<img src="/images/logo-sapienza-white.png" alt="Sapienza Università di Roma" /><img src="/images/testata-dip.png" alt="{{ .Site.Title }}" style="left: 3px; position: relative; top: 3px;" />
+
+<div id="page_header_title">
+	{{ .Site.Title }}<br />Sapienza
+</div>
+
+{{ if isset .Site.Params "logo2" }}
+<img src="{{ .Site.Params.logo2 }}" alt="{{ .Site.Title }}" style="position: absolute; top: 0; right: 0; z-index: 100;" />
+{{ end }}

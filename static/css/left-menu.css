@@ -1,0 +1,39 @@
+
+#page_body_left ul {
+	padding-left: 0px;
+	border: none;
+	list-style: none;
+	text-align: left;
+}
+
+#page_body_left ul > li > ul > li {
+	background-image: url(/images/arrow.png);
+	background-position: 0px 6px;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+}
+
+#page_body_left > ul > li:first-child {
+	border-top: 1px solid #999999;
+}
+
+#page_body_left > ul > li {
+	list-style: none;
+	border-bottom: 1px solid #999999;
+	margin: 0;
+	padding: 0.15em;
+	padding-left: 15px;
+	border-collapse: collapse;
+}
+
+#page_body_left > ul > li > a {
+	display: block;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #52514B;
+	text-decoration: none;
+}
+
+#page_body_left a.menuactive {
+	color: #822433;
+}

@@ -1,0 +1,11 @@
+{{ $currentPage := . }}
+<ul>
+	{{ range .Site.Menus.main }}
+		{{ if .HasChildren }}
+			{{ range .Children }}
+				{{ .Page.Scratch.Set "currentPage" $currentPage }}
+				{{- partial "left_item.html" . -}}
+			{{ end }}
+		{{ end }}
+	{{ end }}
+</ul>

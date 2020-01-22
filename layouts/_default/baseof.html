@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+		<div id="page_container">
+			<div id="page_header" onclick="location.href = '/';">
+				{{- partial "header.html" . -}}
+			</div>
+			<div id="page_sections">
+				<!-- form action="https://www.google.it/search" method="GET">
+					<input type="text" name="q" /> <button type="submit">Cerca</button>
+				</!-- form -->
+				{{- partial "sections.html" . -}}
+			</div>
+			<table id="page_body">
+				<tr>
+					<td id="page_body_left">
+						{{- partial "left.html" . -}}
+					</td>
+					<td id="page_body_center" class="page_body_center_margin">
+						{{- block "main" . -}}{{- end -}}
+					</td>
+					{{ if .Page.Params.pagemenu }}
+					<td id="page_body_right">
+						{{- partial "right.html" . -}}
+					</td>
+					{{ end }}
+				</tr>
+			</table>
+			<div id="page_footer">
+				{{- partial "footer.html" . -}}
+			</div>
+		</div>
+    </body>
+</html>

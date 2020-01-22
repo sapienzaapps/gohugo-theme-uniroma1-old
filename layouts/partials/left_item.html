@@ -1,0 +1,32 @@
+{{ $currentPage := .Page.Scratch.Get "currentPage" }}
+{{ if eq .Page.Section $currentPage.Section }}
+<li>
+	<a href="{{ .URL }}" title="{{ .Title }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}menuactive{{ end }}">
+		{{- .Name -}}
+	</a>
+	<ul>
+	{{ if .HasChildren }}
+		{{ range .Children }}
+			{{ .Page.Scratch.Set "currentPage" $currentPage }}
+			{{- partial "left_item.html" . -}}
+		{{ end }}
+	{{ end }}
+	</ul>
+</li>
+{{ else }}
+{{ if eq .Page.Section $currentPage.Params.section_override }}
+<li>
+	<a href="{{ .URL }}" title="{{ .Title }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}menuactive{{ end }}">
+		{{- .Name -}}
+	</a>
+	<ul>
+	{{ if .HasChildren }}
+		{{ range .Children }}
+			{{ .Page.Scratch.Set "currentPage" $currentPage }}
+			{{- partial "left_item.html" . -}}
+		{{ end }}
+	{{ end }}
+	</ul>
+</li>
+{{ end }}
+{{ end }}

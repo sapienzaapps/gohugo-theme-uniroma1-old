@@ -1,0 +1,39 @@
+#page_body_right > ul {
+	background-color: white;
+	color: #52514B;
+	text-transform: initial;
+	margin: 0;
+	padding-left: 10px;
+	border: 1px solid #005866;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#page_body_right > ul > li {
+	margin-left: 10px;
+	padding: 2px 0;
+}
+
+#page_body_right h1 {
+	margin-bottom: 0;
+}
+
+#page_body_right img {
+	max-width: 100%;
+	max-height: 100%;
+	cursor: pointer;
+}
+
+#page_body_right div {
+	background-color: white;
+	color: #52514B;
+	text-transform: initial;
+	margin: 0;
+	border: 1px solid #005866;
+	padding: 10px;
+}
+
+#page_body_right .li-no-icon {
+	list-style: none;
+	margin-left: 0;
+}

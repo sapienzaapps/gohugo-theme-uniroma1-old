@@ -1,0 +1,11 @@
+name: "uniroma1-old"
+license: "MIT"
+licenselink: "https://github.com/SapienzaApps/gohugo-theme-uniroma1-old/blob/master/LICENSE"
+description: "A Hugo template using old (but still in use) Sapienza University of Rome (uniroma1) template"
+tags: []
+features: []
+min_version: "0.41"
+
+author:
+  name: "SapienzaApps"
+  homepage: "https://www.sapienzaapps.it"

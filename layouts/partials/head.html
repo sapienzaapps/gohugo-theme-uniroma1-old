@@ -12,3 +12,9 @@
 <link type="text/css" rel="stylesheet" href="/css/right-menu.css" />
 
 <link type="text/css" rel="stylesheet" href="/css/mobile.css" />
+<script>
+function search() {
+	var q = encodeURIComponent(document.getElementById("q").value);
+	location.href = 'https://www.google.com/search?q=site:{{ replace (replaceRE "^https?://" "" .Site.BaseURL) "/" "" }}+' + q;
+}
+</script>

@@ -5,6 +5,7 @@
 	padding-left: 190px;
 	height: 36px;
 	border-bottom: 1px #bbb solid;
+	position: relative;
 }
 
 #page_sections ul {

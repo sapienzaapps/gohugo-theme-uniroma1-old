@@ -24,6 +24,12 @@ img {
 	cursor: pointer;
 }
 
+#page_header img.testata {
+	left: 3px;
+	position: relative;
+	top: 3px;
+}
+
 #page_header_title {
 	position: absolute;
 	top: 35px;

@@ -1,0 +1,83 @@
+@media screen and (max-width: 930px) {
+
+	#page_container {
+		width: 100%;
+	}
+
+	#page_sections {
+		margin-right: 0;
+		padding-left: 0;
+		height: initial;
+	}
+
+	#page_sections li {
+		float: initial;
+		text-align: left;
+	}
+
+	#page_sections li.sectionactive {
+		border-bottom: 1px #bbb solid;
+	}
+
+	#page_sections li:first-child {
+		border-top: 1px #bbb solid;
+	}
+
+	#page_sections li:last-child {
+		border-right: 0;
+	}
+
+	#page_body {
+		width: 100%;
+	}
+
+	#page_header .sapienzalogo {
+		display: none;
+	}
+
+	#page_header_title {
+		background-color: #005866;
+		position: initial;
+		padding: 15px;
+		height: 100px;
+	}
+
+	#page_header img.testata {
+		display: none;
+	}
+
+	#page_body_left {
+		min-width: 100%;
+		box-sizing: border-box;
+	}
+
+	#page_body_left, #page_body_center, #page_body_right {
+		float: right;
+		margin: 0;
+		padding: 10px;
+		width: initial;
+	}
+
+	#page_sections {
+		text-align: right;
+	}
+
+	/* HAMBURGER MENU */
+	#page_sections .hamburgerlb {
+		display: inline-block;
+		color: #822433;
+		background-color: #fff;
+		font-style: normal;
+		font-size: 1.2em;
+		padding: 10px;
+		border: 1px #005866 solid;
+	}
+
+	#page_sections ul {
+	  display: none;
+	}
+
+	#page_sections input:checked ~ ul {
+	  display: block;
+	}
+}
